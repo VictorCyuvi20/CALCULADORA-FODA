@@ -93,7 +93,7 @@ namespace CALCULADORA_FODA
         private void button10_Click(object sender, EventArgs e)
         {
             valor1 = Convert.ToSingle(visor.Text);
-            operacao = "multilicação";
+            operacao = "multiplicação";
             visor.Text = "";
         }
 

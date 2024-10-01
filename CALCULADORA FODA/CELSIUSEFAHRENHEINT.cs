@@ -12,6 +12,11 @@ namespace CALCULADORA_FODA
 {
     public partial class CELSIUSEFAHRENHEINT : Form
     {
+
+        public CELSIUSEFAHRENHEINT()
+        {
+            InitializeComponent();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             double celsius = Convert.ToDouble(CONVERTERCELSIUS.Text);

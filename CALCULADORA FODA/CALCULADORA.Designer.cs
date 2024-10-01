@@ -51,6 +51,7 @@
             sAIRToolStripMenuItem = new ToolStripMenuItem();
             eXTRAToolStripMenuItem = new ToolStripMenuItem();
             cONVERSORFAHRENHEITToolStripMenuItem = new ToolStripMenuItem();
+            cONVERSORPOLEGADASToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -251,13 +252,13 @@
             // sAIRToolStripMenuItem
             // 
             sAIRToolStripMenuItem.Name = "sAIRToolStripMenuItem";
-            sAIRToolStripMenuItem.Size = new Size(180, 22);
+            sAIRToolStripMenuItem.Size = new Size(98, 22);
             sAIRToolStripMenuItem.Text = "SAIR";
             sAIRToolStripMenuItem.Click += sAIRToolStripMenuItem_Click;
             // 
             // eXTRAToolStripMenuItem
             // 
-            eXTRAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cONVERSORFAHRENHEITToolStripMenuItem });
+            eXTRAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cONVERSORFAHRENHEITToolStripMenuItem, cONVERSORPOLEGADASToolStripMenuItem });
             eXTRAToolStripMenuItem.Name = "eXTRAToolStripMenuItem";
             eXTRAToolStripMenuItem.Size = new Size(53, 20);
             eXTRAToolStripMenuItem.Text = "EXTRA";
@@ -268,6 +269,12 @@
             cONVERSORFAHRENHEITToolStripMenuItem.Size = new Size(213, 22);
             cONVERSORFAHRENHEITToolStripMenuItem.Text = "CONVERSOR FAHRENHEIT";
             cONVERSORFAHRENHEITToolStripMenuItem.Click += cONVERSORFAHRENHEITToolStripMenuItem_Click;
+            // 
+            // cONVERSORPOLEGADASToolStripMenuItem
+            // 
+            cONVERSORPOLEGADASToolStripMenuItem.Name = "cONVERSORPOLEGADASToolStripMenuItem";
+            cONVERSORPOLEGADASToolStripMenuItem.Size = new Size(213, 22);
+            cONVERSORPOLEGADASToolStripMenuItem.Text = "CONVERSOR POLEGADAS";
             // 
             // CALCULADORA
             // 
@@ -327,5 +334,6 @@
         private ToolStripMenuItem sAIRToolStripMenuItem;
         private ToolStripMenuItem eXTRAToolStripMenuItem;
         private ToolStripMenuItem cONVERSORFAHRENHEITToolStripMenuItem;
+        private ToolStripMenuItem cONVERSORPOLEGADASToolStripMenuItem;
     }
 }
