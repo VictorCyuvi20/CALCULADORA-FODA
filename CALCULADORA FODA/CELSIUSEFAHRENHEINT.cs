@@ -12,5 +12,17 @@ namespace CALCULADORA_FODA
 {
     public partial class CELSIUSEFAHRENHEINT : Form
     {
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double celsius = Convert.ToDouble(CONVERTERCELSIUS.Text);
+            double resultado = celsius * 1.8 + 32;
+            CONVERTERFAHRENHEIT.Text = resultado.ToString();
+        }
+
+        private void LIMPADOR_Click(object sender, EventArgs e)
+        {
+            CONVERTERCELSIUS.Clear();
+            CONVERTERFAHRENHEIT.Clear();
+        }
     }
 }

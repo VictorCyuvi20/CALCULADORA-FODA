@@ -33,6 +33,7 @@
             label1 = new Label();
             CONVERTERFAHRENHEIT = new TextBox();
             label2 = new Label();
+            LIMPADOR = new Button();
             SuspendLayout();
             // 
             // CONVERTERCELSIUS
@@ -53,6 +54,7 @@
             button1.TabIndex = 1;
             button1.Text = "CALCULAR ";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
@@ -78,11 +80,22 @@
             label2.TabIndex = 4;
             label2.Text = "TEMPERATURA EM FAHRENHEIT";
             // 
+            // LIMPADOR
+            // 
+            LIMPADOR.Location = new Point(507, 311);
+            LIMPADOR.Name = "LIMPADOR";
+            LIMPADOR.Size = new Size(75, 23);
+            LIMPADOR.TabIndex = 5;
+            LIMPADOR.Text = "LIMPAR";
+            LIMPADOR.UseVisualStyleBackColor = true;
+            LIMPADOR.Click += LIMPADOR_Click;
+            // 
             // CELSIUSEFAHRENHEINT
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(594, 346);
+            Controls.Add(LIMPADOR);
             Controls.Add(label2);
             Controls.Add(CONVERTERFAHRENHEIT);
             Controls.Add(label1);
@@ -101,5 +114,6 @@
         private Label label1;
         private TextBox CONVERTERFAHRENHEIT;
         private Label label2;
+        private Button LIMPADOR;
     }
 }

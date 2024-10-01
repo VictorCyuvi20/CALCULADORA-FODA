@@ -46,6 +46,12 @@
             button17 = new Button();
             button18 = new Button();
             visor = new TextBox();
+            menuStrip1 = new MenuStrip();
+            aRQUIVOToolStripMenuItem = new ToolStripMenuItem();
+            sAIRToolStripMenuItem = new ToolStripMenuItem();
+            eXTRAToolStripMenuItem = new ToolStripMenuItem();
+            cONVERSORFAHRENHEITToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -226,6 +232,43 @@
             visor.Size = new Size(276, 43);
             visor.TabIndex = 18;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { aRQUIVOToolStripMenuItem, eXTRAToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 19;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // aRQUIVOToolStripMenuItem
+            // 
+            aRQUIVOToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sAIRToolStripMenuItem });
+            aRQUIVOToolStripMenuItem.Name = "aRQUIVOToolStripMenuItem";
+            aRQUIVOToolStripMenuItem.Size = new Size(70, 20);
+            aRQUIVOToolStripMenuItem.Text = "ARQUIVO";
+            // 
+            // sAIRToolStripMenuItem
+            // 
+            sAIRToolStripMenuItem.Name = "sAIRToolStripMenuItem";
+            sAIRToolStripMenuItem.Size = new Size(180, 22);
+            sAIRToolStripMenuItem.Text = "SAIR";
+            sAIRToolStripMenuItem.Click += sAIRToolStripMenuItem_Click;
+            // 
+            // eXTRAToolStripMenuItem
+            // 
+            eXTRAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cONVERSORFAHRENHEITToolStripMenuItem });
+            eXTRAToolStripMenuItem.Name = "eXTRAToolStripMenuItem";
+            eXTRAToolStripMenuItem.Size = new Size(53, 20);
+            eXTRAToolStripMenuItem.Text = "EXTRA";
+            // 
+            // cONVERSORFAHRENHEITToolStripMenuItem
+            // 
+            cONVERSORFAHRENHEITToolStripMenuItem.Name = "cONVERSORFAHRENHEITToolStripMenuItem";
+            cONVERSORFAHRENHEITToolStripMenuItem.Size = new Size(213, 22);
+            cONVERSORFAHRENHEITToolStripMenuItem.Text = "CONVERSOR FAHRENHEIT";
+            cONVERSORFAHRENHEITToolStripMenuItem.Click += cONVERSORFAHRENHEITToolStripMenuItem_Click;
+            // 
             // CALCULADORA
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -249,8 +292,12 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "CALCULADORA";
             Text = "CALCULADORA";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -275,5 +322,10 @@
         private Button button17;
         private Button button18;
         private TextBox visor;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem aRQUIVOToolStripMenuItem;
+        private ToolStripMenuItem sAIRToolStripMenuItem;
+        private ToolStripMenuItem eXTRAToolStripMenuItem;
+        private ToolStripMenuItem cONVERSORFAHRENHEITToolStripMenuItem;
     }
 }

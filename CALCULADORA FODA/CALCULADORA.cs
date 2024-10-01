@@ -138,5 +138,16 @@ namespace CALCULADORA_FODA
                 visor.Text = "ERRO";
             }
         }
+
+        private void cONVERSORFAHRENHEITToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CELSIUSEFAHRENHEINT conversor = new CELSIUSEFAHRENHEINT();
+            conversor.Show();
+        }
+
+        private void sAIRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
