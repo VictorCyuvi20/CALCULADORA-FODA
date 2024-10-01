@@ -143,11 +143,18 @@ namespace CALCULADORA_FODA
         {
             CELSIUSEFAHRENHEINT conversor = new CELSIUSEFAHRENHEINT();
             conversor.Show();
+            
         }
 
         private void sAIRToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void cONVERSORPOLEGADASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            POLEGADAECENTIMETROS conversor2 = new POLEGADAECENTIMETROS();
+            conversor2.Show();
         }
     }
 }

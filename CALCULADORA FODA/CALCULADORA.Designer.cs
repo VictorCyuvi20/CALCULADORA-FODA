@@ -275,6 +275,7 @@
             cONVERSORPOLEGADASToolStripMenuItem.Name = "cONVERSORPOLEGADASToolStripMenuItem";
             cONVERSORPOLEGADASToolStripMenuItem.Size = new Size(213, 22);
             cONVERSORPOLEGADASToolStripMenuItem.Text = "CONVERSOR POLEGADAS";
+            cONVERSORPOLEGADASToolStripMenuItem.Click += cONVERSORPOLEGADASToolStripMenuItem_Click;
             // 
             // CALCULADORA
             // 

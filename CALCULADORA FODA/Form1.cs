@@ -15,6 +15,7 @@ namespace CALCULADORA_FODA
                 timer1.Enabled = false;
                 CALCULADORA cALCULADORA = new CALCULADORA();
                 cALCULADORA.Show();
+                this.Hide();
             }
                 
         }
