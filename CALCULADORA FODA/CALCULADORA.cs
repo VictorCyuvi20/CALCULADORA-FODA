@@ -24,13 +24,13 @@ namespace CALCULADORA_FODA
 
         private void button13_Click(object sender, EventArgs e)
         {
-            visor.Text = visor.Text + "";
+            visor.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             valor1 = 0;
-            visor.Text = visor.Text + "";
+            visor.Clear();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -132,6 +132,10 @@ namespace CALCULADORA_FODA
             {
                 float resultado = valor1 / Convert.ToSingle(visor.Text);
                 visor.Text = resultado.ToString();
+            }
+            if (this.operacao == "")
+            {
+                visor.Text = "ERRO";
             }
         }
     }
